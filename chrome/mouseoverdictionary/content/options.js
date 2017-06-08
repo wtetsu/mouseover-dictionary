@@ -116,7 +116,7 @@ function loaddic()
   					.createInstance(Components.interfaces.nsIFileInputStream);
 		stream.init(aFile, 1, 0, false); // open as "read only"
 	
-		var charset = "Shift-JIS";
+		var charset = "UTF-16";
 		is = Components.classes["@mozilla.org/intl/converter-input-stream;1"]
 		                   .createInstance(Components.interfaces.nsIConverterInputStream);
 
