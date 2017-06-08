@@ -1,0 +1,4 @@
+content	mouseoverdictionary	jar:chrome/mouseoverdictionary.jar!/content/
+locale	mouseoverdictionary	en-US	jar:chrome/mouseoverdictionary.jar!/locale/en-US/
+skin	mouseoverdictionary	classic/1.0	jar:chrome/mouseoverdictionary.jar!/skin/
+overlay	chrome://browser/content/browser.xul	chrome://mouseoverdictionary/content/firefoxOverlay.xul
