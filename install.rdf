@@ -4,7 +4,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>mouseoverdictionary@ichiro.maruta.googlepages.com</em:id>
     <em:name>MouseoverDictionary</em:name>
-    <em:version>0.6.5</em:version>
+    <em:version>0.6.6</em:version>
     <em:creator>Ichro Maruta</em:creator>
     <em:homepageURL>http://maru.bonyari.jp/mouseoverdictionary/</em:homepageURL>
     <em:optionsURL>chrome://mouseoverdictionary/content/options.xul</em:optionsURL>
@@ -13,7 +13,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- firefox -->
         <em:minVersion>2.0b1</em:minVersion>
-        <em:maxVersion>3.5.*</em:maxVersion>
+        <em:maxVersion>3.6.*</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>
