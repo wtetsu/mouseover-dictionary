@@ -20,28 +20,29 @@
 
 <overlay id="MouseoverDictionaryOverlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
-  <script src="overlay.js"/>
+	<script src="overlay.js"/>
 
-  <menupopup id="viewSidebarMenu">
-    <menuitem key="key_openMouseoverDictionary" observes="viewMouseoverDictionary"  />
-  </menupopup>
+	<menupopup id="viewSidebarMenu">
+		<menuitem key="key_openMouseoverDictionary" observes="viewMouseoverDictionary"  />
+	</menupopup>
 
-  <keyset id="mainKeyset">
-	<key id="key_openMouseoverDictionary" command="viewMouseoverDictionary"
-		key="&openMouseoverDictionary.commandkey;" 
-		modifiers="&openMouseoverDictionary.modifierskey;" />
-  </keyset>
+	<keyset id="mainKeyset">
+		<key id="key_openMouseoverDictionary" command="viewMouseoverDictionary"
+		     key="&openMouseoverDictionary.commandkey;" 
+			 modifiers="&openMouseoverDictionary.modifierskey;" />
+	</keyset>
 
-  <broadcasterset id="mainBroadcasterSet"> 
-    <broadcaster id="viewMouseoverDictionary" 
-                 label="Mouseover Dictionary"
-                 autoCheck="false"
-                 type="checkbox"
-                 group="sidebar"
-                 sidebarurl="chrome://mouseoverdictionary/content/sidebar.xul"
-                 sidebartitle="Mouseover Dictionary"
-                 oncommand="toggleSidebar('viewMouseoverDictionary');" />
-  </broadcasterset>
-  <script>initialize();</script>
+	<broadcasterset id="mainBroadcasterSet"> 
+		<broadcaster id="viewMouseoverDictionary" 
+		             label="Mouseover Dictionary"
+					 autoCheck="false"
+					 type="checkbox"
+					 group="sidebar"
+					 sidebarurl="chrome://mouseoverdictionary/content/sidebar.xul"
+					 sidebartitle="Mouseover Dictionary"
+					 oncommand="toggleSidebar('viewMouseoverDictionary');" />
+	</broadcasterset>
+	
+	<script>initialize();</script>
 
 </overlay>

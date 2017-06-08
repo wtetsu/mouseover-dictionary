@@ -82,6 +82,9 @@ function handlemousemove(evt)
                 getService(Components.interfaces.nsIPrefBranch);
 	var sidebar=top.document.getElementById("sidebar");
 	var result = sidebar.contentDocument.getElementById("result");
+
+	if(result == null) return;
+	
 	var doc=result.contentDocument;
 	var parent = evt.rangeParent;
 	var range;

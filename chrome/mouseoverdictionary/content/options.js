@@ -116,10 +116,10 @@ function loaddic()
   					.createInstance(Components.interfaces.nsIFileInputStream);
 		stream.init(aFile, 1, 0, false); // open as "read only"
 	
-		var charset = /* 文字エンコーディングを調べる必要あり。この例では UTF-8 を使用。 */ "Shift-JIS";
+		var charset = "Shift-JIS";
 		is = Components.classes["@mozilla.org/intl/converter-input-stream;1"]
 		                   .createInstance(Components.interfaces.nsIConverterInputStream);
-		// ここで、fis は読み込み元にしたい nsIInputStream と仮定
+
 		is.init(stream, charset, 1024, 0xFFFD);
 	 	stat.value="辞書ファイルを開きました．\n";
 		mDBConn.executeSimpleSQL("BEGIN TRANSACTION");
