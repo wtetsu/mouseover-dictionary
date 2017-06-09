@@ -14,4 +14,4 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  * */
 
-pref("extensions.mouseoverdictionary.sidebar_font_size",0);
+pref("extensions.mousedictionary.sidebar_font_size",0);

@@ -22,7 +22,7 @@ function open_db() {
   file = Components.classes["@mozilla.org/file/directory_service;1"]
                      .getService(Components.interfaces.nsIProperties)
                      .get("ProfD", Components.interfaces.nsIFile);
-  file.append("mouseoverdictionary.sqlite");
+  file.append("mousedictionary.sqlite");
   var storageService = Components.classes["@mozilla.org/storage/service;1"]
                         .getService(Components.interfaces.mozIStorageService);
   mDBConn = storageService.openDatabase(file);

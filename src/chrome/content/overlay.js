@@ -24,7 +24,7 @@ MouseDictionary.prototype.openDb = function() {
   var file = Components.classes["@mozilla.org/file/directory_service;1"]
                      .getService(Components.interfaces.nsIProperties)
                      .get("ProfD", Components.interfaces.nsIFile);
-  file.append("mouseoverdictionary.sqlite");
+  file.append("mousedictionary.sqlite");
   var storageService = Components.classes["@mozilla.org/storage/service;1"]
                         .getService(Components.interfaces.mozIStorageService);
 
@@ -150,7 +150,7 @@ MouseDictionary.prototype.handlemousemove = function(evt) {
 
   doc.open();
   doc.write('<style type=text/css>div.key{color:#000088;font-weight:bold;font-size:100%}div.error{color:red;font-weight:bold;}div.desc{font-size:90%;}span.annote{color:green;}span.ex{color:orange;}</style>');
-  var fontsize = prefs.getIntPref("extensions.mouseoverdictionary.sidebar_font_size");
+  var fontsize = prefs.getIntPref("extensions.mousedictionary.sidebar_font_size");
   if (fontsize < 0) {
     fontsize = fontsize+"";
   } else {

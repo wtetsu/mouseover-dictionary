@@ -1,4 +1,4 @@
-content	mouseoverdictionary	chrome/content/
-locale	mouseoverdictionary	en-US chrome/locale/en-US/
-skin	mouseoverdictionary	classic/1.0	chrome/skin/
+content	mousedictionary	chrome/content/
+locale	mousedictionary	en-US chrome/locale/en-US/
+skin	mousedictionary	classic/1.0	chrome/skin/
 overlay	chrome://browser/content/browser.xul chrome/content/firefoxOverlay.xul

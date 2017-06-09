@@ -14,7 +14,7 @@ def command(cmd):
   return r
 
 def build(version):
-  xpifile = "mouseoverdictionary-%s.xpi" % (version)
+  xpifile = "mousedictionary-%s.xpi" % (version)
   if os.path.isfile(xpifile):
     os.remove(xpifile)
   os.chdir("src")

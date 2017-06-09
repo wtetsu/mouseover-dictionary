@@ -2,12 +2,12 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
  xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <Description about="urn:mozilla:install-manifest">
-    <em:id>mouseoverdictionary@ichiro.maruta.googlepages.com</em:id>
-    <em:name>MouseoverDictionary</em:name>
-    <em:version>0.6.14</em:version>
-    <em:creator>Ichro Maruta</em:creator>
-    <em:homepageURL>http://maru.bonyari.jp/mouseoverdictionary/</em:homepageURL>
-    <em:optionsURL>chrome://mouseoverdictionary/content/options.xul</em:optionsURL>
+    <em:id>mousedictionary@katatema.main.jp</em:id>
+    <em:name>MouseDictionary</em:name>
+    <em:version>0.7.0</em:version>
+    <em:creator>wtetsu</em:creator>
+    <em:homepageURL>http://katatema.main.jp/</em:homepageURL>
+    <em:optionsURL>chrome://mousedictionary/content/options.xul</em:optionsURL>
     <em:description>英辞郎のデータが使えるマウスオーバー辞書</em:description>
     <em:targetApplication>
       <Description>

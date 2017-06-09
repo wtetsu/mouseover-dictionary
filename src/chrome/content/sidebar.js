@@ -23,7 +23,7 @@ function font_announce()
 	var doc=result.contentDocument;
 	doc.open();
 	doc.write('<style type=text/css>div.key{color:#000088;font-weight:bold;}div.error{color:red;font-weight:bold;}div.desc{font-size:small;}span.annote{color:green;}span.ex{color:orange;}</style>');
-	var fontsize=prefs.getIntPref("extensions.mouseoverdictionary.sidebar_font_size");
+	var fontsize=prefs.getIntPref("extensions.mousedictionary.sidebar_font_size");
 	if(fontsize<0){
 		fontsize=fontsize+"";
 	}else{
@@ -41,8 +41,8 @@ function font_enlarge()
 {
 	var prefs = Components.classes["@mozilla.org/preferences-service;1"].
                 getService(Components.interfaces.nsIPrefBranch);
-    var fontsize=prefs.getIntPref("extensions.mouseoverdictionary.sidebar_font_size");
-    prefs.setIntPref("extensions.mouseoverdictionary.sidebar_font_size",fontsize+1);
+    var fontsize=prefs.getIntPref("extensions.mousedictionary.sidebar_font_size");
+    prefs.setIntPref("extensions.mousedictionary.sidebar_font_size",fontsize+1);
     font_announce();
 }
 
@@ -50,8 +50,8 @@ function font_reduce()
 {
 	var prefs = Components.classes["@mozilla.org/preferences-service;1"].
                 getService(Components.interfaces.nsIPrefBranch);
-    var fontsize=prefs.getIntPref("extensions.mouseoverdictionary.sidebar_font_size");
-    prefs.setIntPref("extensions.mouseoverdictionary.sidebar_font_size",fontsize-1);
+    var fontsize=prefs.getIntPref("extensions.mousedictionary.sidebar_font_size");
+    prefs.setIntPref("extensions.mousedictionary.sidebar_font_size",fontsize-1);
     font_announce();
 }
 
@@ -59,6 +59,6 @@ function font_normal()
 {
 	var prefs = Components.classes["@mozilla.org/preferences-service;1"].
                 getService(Components.interfaces.nsIPrefBranch);
-    prefs.setIntPref("extensions.mouseoverdictionary.sidebar_font_size",0);
+    prefs.setIntPref("extensions.mousedictionary.sidebar_font_size",0);
     font_announce();
 }

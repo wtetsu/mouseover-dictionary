@@ -15,34 +15,34 @@
   - OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
   - -->
 
-<?xml-stylesheet href="chrome://mouseoverdictionary/skin/overlay.css" type="text/css"?>
-<!DOCTYPE overlay SYSTEM "chrome://mouseoverdictionary/locale/mouseoverdictionary.dtd">
+<?xml-stylesheet href="chrome://mousedictionary/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://mousedictionary/locale/mousedictionary.dtd">
 
-<overlay id="MouseoverDictionaryOverlay"
+<overlay id="MouseDictionaryOverlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
 	<script src="string.js"/>
 	<script src="misc.js"/>
 	<script src="overlay.js"/>
 
 	<menupopup id="viewSidebarMenu">
-		<menuitem key="key_openMouseoverDictionary" observes="viewMouseoverDictionary"  />
+		<menuitem key="key_openMouseDictionary" observes="viewMouseDictionary"  />
 	</menupopup>
 
 	<keyset id="mainKeyset">
-		<key id="key_openMouseoverDictionary" command="viewMouseoverDictionary"
-		     key="&openMouseoverDictionary.commandkey;" 
-			 modifiers="&openMouseoverDictionary.modifierskey;" />
+		<key id="key_openMouseDictionary" command="viewMouseDictionary"
+		     key="&openMouseDictionary.commandkey;" 
+			 modifiers="&openMouseDictionary.modifierskey;" />
 	</keyset>
 
 	<broadcasterset id="mainBroadcasterSet"> 
-		<broadcaster id="viewMouseoverDictionary" 
-		             label="Mouseover Dictionary"
+		<broadcaster id="viewMouseDictionary" 
+		             label="Mouse Dictionary"
 					 autoCheck="false"
 					 type="checkbox"
 					 group="sidebar"
-					 sidebarurl="chrome://mouseoverdictionary/content/sidebar.xul"
-					 sidebartitle="Mouseover Dictionary"
-					 oncommand="toggleSidebar('viewMouseoverDictionary');" />
+					 sidebarurl="chrome://mousedictionary/content/sidebar.xul"
+					 sidebartitle="Mouse Dictionary"
+					 oncommand="toggleSidebar('viewMouseDictionary');" />
 	</broadcasterset>
 	
 	<script>initialize();</script>
