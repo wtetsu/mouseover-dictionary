@@ -1,14 +1,11 @@
+# -*- coding: utf-8 -*-
+#
+# Copyright (C) 2017 wtetsu
+# License: MIT
+
 import os
-import shutil
 import sys
 import subprocess
-
-version = None
-
-if len(sys.argv) > 1:
-  version = sys.argv[1]
-else:
-  version = "unstable"
 
 def command(cmd):
   r = subprocess.call(cmd, shell=True)
@@ -16,16 +13,17 @@ def command(cmd):
     raise Exception("command error: " + cmd)
   return r
 
-if os.path.isdir("build"):
-  shutil.rmtree("build")
+def build(version):
+  xpifile = "mouseoverdictionary-%s.xpi" % (version)
+  if os.path.isfile(xpifile):
+    os.remove(xpifile)
+  os.chdir("src")
+  command("zip -r ../%s *" % (xpifile))
 
-shutil.copytree("src", "build")
-
-os.chdir("build/chrome/mouseoverdictionary")
-command("jar -cvf ../mouseoverdictionary.jar *")
-
-os.chdir("../")
-shutil.rmtree("mouseoverdictionary")
-
-os.chdir("../")
-command("zip -r ../mouseoverdictionary-%s.xpi *" % (version))
+if __name__ == "__main__":
+  version = None
+  if len(sys.argv) > 1:
+    version = sys.argv[1]
+  else:
+    version = "unstable"
+  build(version)

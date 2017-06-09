@@ -20,6 +20,8 @@
 
 <overlay id="MouseoverDictionaryOverlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+	<script src="string.js"/>
+	<script src="misc.js"/>
 	<script src="overlay.js"/>
 
 	<menupopup id="viewSidebarMenu">
