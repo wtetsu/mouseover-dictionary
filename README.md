@@ -1,5 +1,5 @@
 
-# Mouseover Dictionary
+# Mouse Dictionary
 
-Mouseover Dictionary is a dictionary extension for Firefox.
+Mouse Dictionary is a dictionary extension for Firefox.
 
